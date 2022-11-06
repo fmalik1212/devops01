@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>spock-lizard</name>
-	<description>Spock Lizard Docker</description>
+	<description>My Spock Lizard Docker</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
