@@ -22,6 +22,7 @@ java -version'''
     stage('build') {
       steps {
         sh 'mvn clean install -Dlicense.skip=true'
+        tool(name: 'Maven 3.3.9', type: 'jdk8')
       }
     }
 
