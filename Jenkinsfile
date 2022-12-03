@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('LOG TOOL VERSION') {
       steps {
         sh 'git --version'
       }
