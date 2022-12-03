@@ -21,7 +21,7 @@ java -version'''
 
     stage('build') {
       steps {
-        tool(name: 'Maven 3.3.9', type: 'jdk8')
+        tool 'Maven'
       }
     }
 
