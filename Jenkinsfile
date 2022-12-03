@@ -1,29 +1,23 @@
 pipeline {
-  agent any
-  stages {
-    stage('log tool version') {
-      parallel {
-        stage('log tool version') {
-          steps {
-            sh '''git --version
-java -version'''
-          }
+    agent any
+    tools { 
+        maven 'Maven 3.3.9' 
+        jdk 'jdk8' 
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
+            }
         }
 
-        stage('file exist') {
-          steps {
-            fileExists 'pom.xml'
-          }
+        stage ('Build') {
+            steps {
+                echo 'This is a minimal pipeline.'
+            }
         }
-
-      }
     }
-
-    stage('build') {
-      steps {
-        tool 'Maven'
-      }
-    }
-
-  }
 }
