@@ -21,7 +21,7 @@ java -version'''
 
     stage('build') {
       steps {
-        sh 'mvn compile test package'
+        sh 'mvn clean install -Dlicense.skip=true'
       }
     }
 
