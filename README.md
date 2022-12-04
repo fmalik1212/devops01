@@ -1,7 +1,7 @@
-## this is a readme file of assessement 3
-##this project is a spring boot microservice appliaction
+## This is a readme file of assessement 3
+This project is a spring boot microservice appliaction
 
-# unit test
+# Unit test
 #1. test checks git is installed
 #2. test checks mvn whcih is maven is installed
 #3. test check java is installed
