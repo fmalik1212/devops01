@@ -1,17 +1,29 @@
 pipeline {
   agent any
   stages {
-    stage('log tool') {
+    stage('UNIT TESTING') {
       parallel {
-        stage('log tool') {
+        stage('TEST 1') {
           steps {
             sh '''java -version
-git --version
-mvn --version'''
+'''
           }
         }
 
-        stage('error') {
+        stage('TEST 2') {
+          steps {
+            sh '''git --version
+'''
+          }
+        }
+
+        stage('') {
+          steps {
+            sh 'mvn --version'
+          }
+        }
+
+        stage('TEST 4') {
           steps {
             fileExists 'pom.xml'
           }
