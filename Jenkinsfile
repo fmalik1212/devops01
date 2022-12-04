@@ -1,9 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('log tool') {
       steps {
-        sh 'mvn compile test package'
+        sh '''java -version
+git --version
+mvn --version'''
       }
     }
 
