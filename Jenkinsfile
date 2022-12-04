@@ -25,7 +25,7 @@ pipeline {
 
         stage('TEST 4') {
           steps {
-            fileExists 'a.pdf'
+            fileExists 'pom.xml'
           }
         }
 
