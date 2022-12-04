@@ -17,7 +17,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('TEST 3') {
           steps {
             sh 'mvn --version'
           }
@@ -25,7 +25,7 @@ pipeline {
 
         stage('TEST 4') {
           steps {
-            fileExists 'pom.xml'
+            fileExists 'xyz.xml'
           }
         }
 
