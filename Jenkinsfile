@@ -26,5 +26,11 @@ mvn --version'''
       }
     }
 
+    stage('Post build job') {
+      steps {
+        writeFile(file: 'Status.txt', text: 'it worked! ')
+      }
+    }
+
   }
 }
