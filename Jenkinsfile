@@ -11,12 +11,18 @@ mvn --version'''
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             fileExists 'pom.xml'
           }
         }
 
+      }
+    }
+
+    stage('Build the code') {
+      steps {
+        sh 'mvn compile test package'
       }
     }
 
