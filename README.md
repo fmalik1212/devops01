@@ -6,9 +6,9 @@ This project is a spring boot microservice appliaction
 2. test checks mvn whcih is maven is installed
 3. test check java is installed
 
-# Build the spring boot application
-mvn compile test package is run in the shell commond inside jenskin to build this maven project
-if buit is scuccessful that means unit test and build test is successfull
+# Build and deployment of the spring boot application
+"mvn compile test package" command will run in the shell command inside jenskin to build and deploy this maven project
+if this is scuccessful that means unit test and build test is successfull
 
 # Post buit job
 its a a file write in the workspace.
