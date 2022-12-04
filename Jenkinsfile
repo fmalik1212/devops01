@@ -25,7 +25,7 @@ pipeline {
 
         stage('TEST 4') {
           steps {
-            fileExists 'xyz.xml'
+            fileExists 'xyz.txt'
           }
         }
 
